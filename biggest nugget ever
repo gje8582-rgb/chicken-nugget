@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chicken Nugget</title>
+  <style>
+    html,body{
+      height:100%;
+      margin:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: radial-gradient(circle, #ffe07c, #ffb347);
+      font-family: "Comic Sans MS", "Fredoka One", cursive, sans-serif;
+    }
+
+    h1{
+      font-size: clamp(32px, 8vw, 72px);
+      text-align:center;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: bounce 1s infinite, rainbow 6s linear infinite;
+      text-shadow: 3px 3px 0px white;
+      padding: 20px;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-30px); }
+      60% { transform: translateY(-15px); }
+    }
+
+    @keyframes rainbow {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    /* add a silly wiggle effect */
+    h1:hover {
+      animation: wobble 0.6s infinite;
+    }
+
+    @keyframes wobble {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(-5deg); }
+      75% { transform: rotate(5deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Nicole Nordquist is a uncooked chicken nugget</h1>
+</body>
+</html>
